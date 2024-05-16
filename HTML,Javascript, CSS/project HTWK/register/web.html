@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Geben Sie Ihr Umfrageformular ein</h1>
+        <p id="description" class="description text-center">
+          Vielen Dank, dass Sie sich die Zeit genommen haben, uns bei der Verbesserung der Plattform zu helfen
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Gib deinen Namen ein"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Geben sie ihre E-Mail Adresse ein"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Alter<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Alter"
+          />
+        </div>
+        <div class="form-group">
+          <p>Ihr aktueller Zustand</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full-Zeit Job</option>
+            <option value="learner">Full Time Lerner</option>
+            <option value="preferNo">Mache lieber keine Angabe</option>
+            <option value="other">Andere</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Was sagt ihr zum Design?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Gut</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />nicht schlecht</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Schlecht</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Was sind Ihre größten Schwierigkeiten an der Universität?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Wähle eine Option</option>
+            <option value="challenges">Prüfungen</option>
+            <option value="projects">Projekte</option>
+            <option value="community">Grupp arbeit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Was würden Sie gerne verbessert sehen?
+            <span class="clue">(Zutreffendes bitte ankreuzen)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projekte</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projekte</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Datenvisualisierung</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open-Source-Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter Hilferäume</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />Treffen in der Stadt</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Zusätzliche Kurse</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Irgendwelche Kommentare oder Vorschläge?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Einreichen
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

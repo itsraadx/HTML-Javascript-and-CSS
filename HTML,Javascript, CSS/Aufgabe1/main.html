@@ -1,0 +1,40 @@
+<html>
+    <head>
+        Der Summator <i>Super++</i>
+        <form>
+            <p>
+            <input type="text" name="summand" size="12" maxlength="12" > Summanden <br >
+            <input type="text" name="summe" value="0" size="12" maxlength="12" readonly="readonly" > Summe
+            </p>
+            <p>
+            <input type="button" value="Addieren" onclick="add(init());" >
+            <input type="button" value="Eingabe löschen" onclick="loesch(init());" >
+            <input type="button" value="Rücksetzen" onclick="rueck(init());" >
+            </p>
+            <script>
+                var sd,su;
+                function init(){
+                sd = document.getElementsByName("summand")[0];
+                su = document.getElementsByName("summe")[0];
+                sd.focus(); //Eingabecursor in Summandenfeld platzieren
+                } 
+                function loesch() {
+                    sd.value = ""; //Rücksetzen des Summandenfelds sd.focus(); //Eingabecursor in Summandenfeld platzieren
+                    }
+                function add(){
+                    if (isNaN(sd.value)) { //Der Eingabewert stellt keine Zahl dar
+                        alert("Geben Sie einen Zahlenwert ein!");
+                        } else { //Der Eingabewert stellt eine Zahl dar
+                        su.value = Number(su.value) + Number(sd.value); }
+                        sd.value = ""; //Summandenfeld zurücksetzen
+                        sd.focus(); //Eingabecursor in Summandenfeld platzieren 
+                        }
+                function rueck() {
+                    su.value = "0"; 
+                    sd.focus()
+                }
+                </script>
+          </form>
+    </head>
+</html>
+                    

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anfänge</title>
+    <style>
+        body{
+            /*background: linear-gradient(180deg, rgba(65,65,65,1) 0%, rgba(158,158,158,1) 100%, rgba(52,70,74,1) 100%);*/
+            background: rgba(12,32,80,255);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+        h1{
+            text-align: center;
+        }
+        .text{
+            font-family: 'Bahnschrift';
+            color: white;
+        }
+        .bild1{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        img{
+            border-radius: 10%;
+        }
+        figure{
+            text-align: center;
+        }
+        figcaption{
+            display: inline-block;
+            text-align: left;
+        }
+        #cont{
+            padding: 2em;
+        }
+        #fig{
+            padding: 1em;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="text">Die Anfänge</h1></br>
+    <figure>
+        <div class="bild1"><a href="https://i.pinimg.com/originals/d6/9f/bf/d69fbfaa7735ae99ca88a3db8bea5585.jpg"><img src="alterComputer.jpg"></a></div>
+        <figcaption class="text" id="fig">Ein Computer aus den 1940er</figcaption>
+    </figure>
+    <div class="container">
+        <div class="text" id="cont">
+            Die Geschichte der Videospiele begann in den 1940er Jahren. Computer gab es zu dieser Zeit nur in Universitäten, da sie teilweise
+            ganze Räume füllten und teuer waren. Dadurch wurden die ersten Spiele von Studenten programmiert und gespielt ohne groß
+            vermarktet zu werden. Als erstes Videospiel wird meistens "Tennis for Two" angesehen. Dieses wurde 1958 von William Higinbotham an dem
+            Brookhaven National Laboratory in New York entwickelt und dort am Tag der offenen Tür des Kernfoschungszentrums ausgestellt.
+            Durch die starke Entwicklung von Computern wurden Videospiele ein immer interessanteres Geschäft. Dies sorgte für die Entstehung von
+            Konzernen wie Atari, welcher 1972 gegründet wurde und sich auf die Produktion der für Videospiele notwendige Software und Hardware 
+            spezialisieren. Eines der populärsten Spiele von Atari ist Pong, eine vereinfachte Version von "Tennis for Two". 
+            Diese kann hier angespielt werden: <a href="game.html">Pong</a>
+        </div>
+        <figure>
+            <a href="https://media.wired.com/photos/59fccff22d3f5732c7d5aa15/master/w_2560%2Cc_limit/Pong-TA-B1C1YX.jpg"><img src="pong.webp" width="100%" height="100%"></a>
+            <figcaption class="text" id="fig">Pong auf dem Atari 2600</figcaption>
+        </figure>
+    </div>
+    <!--<div class="container">
+        <button onclick="start()">Start</button>
+        <canvas id="gameCanvas" width="700" height="600"></canvas>
+        <script src="game.js"></script></div></br>-->
+    <div class="text"><a href="http://127.0.0.1:5500/project%20HTWK/main.html">Zurück</a></div>
+</body>
+</html>
